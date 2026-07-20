@@ -22,9 +22,16 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     color: var(--text-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+}
+
+.page-content {
+    flex: 1;
 }
 
 a {
