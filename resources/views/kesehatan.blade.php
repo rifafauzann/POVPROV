@@ -15,31 +15,31 @@
         </div>
         
         <div class="container">
-            <div class="kesehatan-filters">
-                <div class="k-filter active">
+            <div class="kesehatan-filters" role="tablist" aria-label="Filter fasilitas kesehatan">
+                <button type="button" class="k-filter active" data-category="all" aria-pressed="true">
                     <i class="fas fa-hospital-alt icon"></i>
                     <div class="filter-text">Semua Fasilitas<br><strong>415</strong></div>
-                </div>
-                <div class="k-filter">
+                </button>
+                <button type="button" class="k-filter" data-category="rumah-sakit" aria-pressed="false">
                     <i class="fas fa-hospital icon red"></i>
                     <div class="filter-text">Rumah sakit<br><strong>22</strong></div>
-                </div>
-                <div class="k-filter">
+                </button>
+                <button type="button" class="k-filter" data-category="klinik" aria-pressed="false">
                     <i class="fas fa-clinic-medical icon blue"></i>
                     <div class="filter-text">Klinik<br><strong>154</strong></div>
-                </div>
-                <div class="k-filter">
+                </button>
+                <button type="button" class="k-filter" data-category="laboratorium" aria-pressed="false">
                     <i class="fas fa-flask icon blue"></i>
                     <div class="filter-text">Laboratorium<br><strong>10</strong></div>
-                </div>
-                <div class="k-filter">
+                </button>
+                <button type="button" class="k-filter" data-category="apotek" aria-pressed="false">
                     <i class="fas fa-prescription-bottle-alt icon blue"></i>
                     <div class="filter-text">Apotek<br><strong>164</strong></div>
-                </div>
-                <div class="k-filter">
-                    <i class="fas fa-ellipsis-h icon gray"></i>
-                    <div class="filter-text">Lainnya<br><strong>100+</strong></div>
-                </div>
+                </button>
+                <button type="button" class="k-filter" data-category="lainnya" aria-pressed="false">
+                    <i class=""></i>
+                    <div class="filter-text">UTD<br><strong>1</strong></div>
+                </button>
             </div>
         </div>
 
@@ -77,40 +77,67 @@
                         <select><option>Terdekat</option></select>
                     </div>
                 </div>
-                <!-- ListItem 1 -->
-                <div class="faskes-card">
-                    <img src="https://images.unsplash.com/photo-1587351021759-3e566d6af7bf?w=200&q=80" alt="RS PMI" class="faskes-img">
+                <div class="faskes-card" data-category="rumah-sakit">
+                    <img src="image/PMI.jpg" alt="RS PMI" class="faskes-img">
                     <div class="faskes-info">
                         <div class="faskes-title">
                             <h4>RS PMI Bogor</h4> <span class="badge badge-green">Rumah sakit</span>
                         </div>
-                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Raya Pajajaran No.90</p>
-                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 833 455</p>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Raya Pajajaran No.80 </p>
+                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 8324080 </p>
                         <p class="layanan"><strong>Layanan:</strong> IGD 24 Jam, Rawat inap</p>
                     </div>
                     <div class="faskes-action">
                         <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>2.1 km</strong><br><span>dari lokasi anda</span></div>
-                        <a href="#" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
+                        <a href="https://rspmibogor.or.id/" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <!-- ListItem 2 -->
-                <div class="faskes-card">
+                <div class="faskes-card" data-category="rumah-sakit">
                     <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=200&q=80" alt="RS Azra" class="faskes-img">
                     <div class="faskes-info">
                         <div class="faskes-title">
                             <h4>RS Azra Bogor</h4> <span class="badge badge-green">Rumah sakit</span>
                         </div>
-                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Abdullah Bin Nuh No27B</p>
-                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 833 455</p>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Raya Pajajaran No.219, RT.02/RW.11, Bantarjati, Kec. Bogor Utara, Kota Bogor, Jawa Barat</p>
+                        <p class="phone"><i class="fas fa-phone-alt"></i>  (0251) 6900420 </p>
                         <p class="layanan"><strong>Layanan:</strong> IGD 24 Jam, Rawat inap</p>
                     </div>
                     <div class="faskes-action">
                         <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>2.6 km</strong><br><span>dari lokasi anda</span></div>
+                        <a href="https://rsazra.co.id/" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="faskes-card" data-category="klinik">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&q=80" alt="Klinik Sehat Bogor" class="faskes-img">
+                    <div class="faskes-info">
+                        <div class="faskes-title">
+                            <h4>Klinik Sehat Bogor</h4> <span class="badge badge-blue">Klinik</span>
+                        </div>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Merdeka No.12, Kota Bogor</p>
+                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 8371122</p>
+                        <p class="layanan"><strong>Layanan:</strong> Pemeriksaan umum, vaksinasi</p>
+                    </div>
+                    <div class="faskes-action">
+                        <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>1.2 km</strong><br><span>dari lokasi anda</span></div>
                         <a href="#" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <!-- ListItem 3 -->
-                <div class="faskes-card">
+                <div class="faskes-card" data-category="laboratorium">
+                    <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=200&q=80" alt="Laboratorium Prodia" class="faskes-img">
+                    <div class="faskes-info">
+                        <div class="faskes-title">
+                            <h4>Laboratorium Prodia</h4> <span class="badge badge-blue">Laboratorium</span>
+                        </div>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Sudirman No.45, Kota Bogor</p>
+                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 8399001</p>
+                        <p class="layanan"><strong>Layanan:</strong> Tes darah, kultur, rapid test</p>
+                    </div>
+                    <div class="faskes-action">
+                        <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>3.0 km</strong><br><span>dari lokasi anda</span></div>
+                        <a href="#" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="faskes-card" data-category="apotek">
                     <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?w=200&q=80" alt="Apotek Kimia Farma" class="faskes-img">
                     <div class="faskes-info">
                         <div class="faskes-title">
@@ -125,9 +152,11 @@
                         <a href="#" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <!-- Pagination -->
+                <div class="empty-state" style="display: none;">
+                    <p>Tidak ada fasilitas yang cocok dengan kategori ini.</p>
+                </div>
                 <div class="pagination-container">
-                    <span class="pagination-info">Menampilkan 1-3 dari 60 Fasilitas</span>
+                    <span class="pagination-info">Menampilkan 1-5 dari 5 Fasilitas</span>
                     <div class="pagination-controls">
                         <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
                         <button class="page-btn active">1</button>
@@ -141,4 +170,4 @@
         </div>
     </section>
 
-@endsection
+@endsection\

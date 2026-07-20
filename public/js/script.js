@@ -39,12 +39,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Toggle active state for Kesehatan Filters
+    // Toggle active state for Kesehatan Filters and switch displayed facilities
     const kFilters = document.querySelectorAll('.k-filter');
+    const fasilitasCards = document.querySelectorAll('.faskes-card');
+    const emptyState = document.querySelector('.empty-state');
+    const paginationInfo = document.querySelector('.pagination-info');
+
+    const updateFasilitasList = (selectedCategory) => {
+        let visibleCount = 0;
+
+        fasilitasCards.forEach(card => {
+            const matches = selectedCategory === 'all' || card.dataset.category === selectedCategory;
+            card.style.display = matches ? '' : 'none';
+            if (matches) visibleCount += 1;
+        });
+
+        if (emptyState) {
+            emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        if (paginationInfo) {
+            paginationInfo.textContent = `Menampilkan ${visibleCount > 0 ? 1 : 0}-${visibleCount} dari ${visibleCount} Fasilitas`;
+        }
+    };
+
     kFilters.forEach(filter => {
         filter.addEventListener('click', () => {
-            kFilters.forEach(f => f.classList.remove('active'));
+            kFilters.forEach(f => {
+                f.classList.remove('active');
+                f.setAttribute('aria-pressed', 'false');
+            });
+
             filter.classList.add('active');
+            filter.setAttribute('aria-pressed', 'true');
+            updateFasilitasList(filter.dataset.category);
         });
     });
+
+    updateFasilitasList('all');
 });
