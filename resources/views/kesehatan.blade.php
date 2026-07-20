@@ -18,7 +18,7 @@
             <div class="kesehatan-filters" role="tablist" aria-label="Filter fasilitas kesehatan">
                 <button type="button" class="k-filter active" data-category="all" aria-pressed="true">
                     <i class="fas fa-hospital-alt icon"></i>
-                    <div class="filter-text">Semua Fasilitas<br><strong>415</strong></div>
+                    <div class="filter-text">Semua Fasilitas<br><strong>416</strong></div>
                 </button>
                 <button type="button" class="k-filter" data-category="rumah-sakit" aria-pressed="false">
                     <i class="fas fa-hospital icon red"></i>
@@ -36,8 +36,8 @@
                     <i class="fas fa-prescription-bottle-alt icon blue"></i>
                     <div class="filter-text">Apotek<br><strong>164</strong></div>
                 </button>
-                <button type="button" class="k-filter" data-category="lainnya" aria-pressed="false">
-                    <i class=""></i>
+                <button type="button" class="k-filter" data-category="utd" aria-pressed="false">
+                    <i class="fa-solid fa-droplet"></i>
                     <div class="filter-text">UTD<br><strong>1</strong></div>
                 </button>
             </div>
@@ -150,6 +150,21 @@
                     <div class="faskes-action">
                         <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>1.8 km</strong><br><span>dari lokasi anda</span></div>
                         <a href="#" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="faskes-card" data-category="utd">
+                    <img src="image\UTD PMi kota bogor.png" alt="UTD PMI Bogor" class="faskes-img">
+                    <div class="faskes-info">
+                        <div class="faskes-title">
+                            <h4>UTD PMI Kota Bogor</h4> <span class="badge badge-blue">UTD</span>
+                        </div>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Jl. Kresna Raya No.43a, RT.02/RW.16, Bantarjati, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16153 </p>
+                        <p class="phone"><i class="fas fa-phone-alt"></i> (0251) 834 2864 </p>
+                        <p class="layanan"><strong>Layanan:</strong> Donor darah, stok darah, transfusi</p>
+                    </div>
+                    <div class="faskes-action">
+                        <div class="distance"><i class="fas fa-map-marker-alt text-blue"></i> <strong>3.4 km</strong><br><span>dari lokasi anda</span></div>
+                        <a href="https://www.google.com/maps/place/PMI+Kota+Bogor/@-6.5737876,106.8093121,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c4242ab014dd:0x7e887b772ca00377!8m2!3d-6.5737929!4d106.811887!16s%2Fg%2F11btmqqz0p?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" class="btn btn-blue btn-sm mt-2">Lihat Detail <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="empty-state" style="display: none;">
