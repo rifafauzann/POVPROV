@@ -31,37 +31,45 @@
 
  <!-- Stats Section -->
     <section class="stats">
-        <div class="container stats-container">
-            <div class="stat-card">
-                <i class="fas fa-hotel stat-icon"></i>
-                <div class="stat-info">
-                    <h3>80</h3>
-                    <p>Hotel</p>
-                </div>
+    <div class="container stats-container">
+
+        <!-- Hotel -->
+        <a href="#hotel" class="stat-card">
+            <i class="fas fa-hotel stat-icon"></i>
+            <div class="stat-info">
+                <h3>80</h3>
+                <p>Hotel</p>
             </div>
-            <div class="stat-card">
-                <i class="fas fa-running stat-icon"></i>
-                <div class="stat-info">
-                    <h3>28</h3>
-                    <p>Cabang Olahraga</p>
-                </div>
+        </a>
+
+        <!-- Cabang Olahraga -->
+        <a href="#cabor" class="stat-card">
+            <i class="fas fa-running stat-icon"></i>
+            <div class="stat-info">
+                <h3>28</h3>
+                <p>Cabang Olahraga</p>
             </div>
-            <div class="stat-card">
-                <i class="fas fa-clinic-medical stat-icon"></i>
-                <div class="stat-info">
-                    <h3>164</h3>
-                    <p>Apotek</p>
-                </div>
+        </a>
+
+        <!-- Apotek -->
+        <a href="#apotek" class="stat-card">
+            <i class="fas fa-clinic-medical stat-icon"></i>
+            <div class="stat-info">
+                <h3>164</h3>
+                <p>Apotek</p>
             </div>
-            <div class="stat-card">
-                <i class="fas fa-hospital stat-icon green"></i>
-                <div class="stat-info">
-                    <h3>22</h3>
-                    <p>Rumah Sakit</p>
-                </div>
+        </a>
+
+        <!-- Rumah Sakit -->
+        <a href="#rumahsakit" class="stat-card">
+            <i class="fas fa-hospital stat-icon green"></i>
+            <div class="stat-info">
+                <h3>22</h3>
+                <p>Rumah Sakit</p>
             </div>
-        </div>
-    </section>
+        </a>
+    </div>
+</section>
 
 
 @endsection
