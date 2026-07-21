@@ -17,12 +17,8 @@
                     <li><a href="{{ route('galeri') }}" class="{{ request()->routeIs('galeri') ? 'active' : '' }}">GALERI</a></li>
                 </ul>
             </nav>
-            <div class="nav-actions">
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Cari di sini">
-                </div>
-                <button class="btn-login">Login</button>
+        
+                <button class="btn-login">.</button>
             </div>
             <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>

@@ -1199,6 +1199,7 @@ ul {
     border-radius: 8px;
     overflow: hidden;
     aspect-ratio: 4/3;
+    cursor: pointer;
 }
 
 .galeri-item img {
@@ -1253,6 +1254,8 @@ footer {
 .footer-logo {
     height: 40px;
 }
+
+
 
 /* Responsive */
 @media (max-width: 1024px) {
