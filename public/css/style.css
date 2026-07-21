@@ -705,14 +705,14 @@ ul {
 .pilih-hari {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 20px;
 }
 
-.day-circle {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.day-card {
+    width: 75px;
+    height: 95px;
+    border-radius: 12px;
     background: var(--bg-light);
     border: 1px solid var(--border-color);
     display: flex;
@@ -720,32 +720,52 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: .3s;
 }
 
-.day-circle span {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1;
-}
-
-.day-circle small {
-    font-size: 0.6rem;
+.day-card small {
+    font-size: 10px;
+    font-weight: 600;
     color: var(--text-muted);
+    text-transform: uppercase;
 }
 
-.day-circle.active,
-.day-circle:hover {
+.day-card span {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1;
+    margin: 2px 0;
+}
+
+.day-card p {
+    font-size: 10px;
+    margin: 0;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.day-card b {
+    font-size: 10px;
+    color: #888;
+}
+
+.day-card.active,
+.day-card:hover {
     background: var(--primary-blue);
-    color: white;
     border-color: var(--primary-blue);
 }
 
-.day-circle.active small,
-.day-circle:hover small {
-    color: rgba(255, 255, 255, 0.8);
+.day-card.active small,
+.day-card.active span,
+.day-card.active p,
+.day-card.active b,
+.day-card:hover small,
+.day-card:hover span,
+.day-card:hover p,
+.day-card:hover b {
+    color: #fff;
 }
-
 .btn-unduh {
     padding: 12px 25px;
     font-size: 1rem;

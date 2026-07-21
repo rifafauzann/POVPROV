@@ -111,21 +111,65 @@
                     </div>
                 </div>
                 <div class="pilih-hari-container">
-                    <div class="pilih-hari-label">Pilih Hari <i class="fas fa-arrow-up"></i></div>
                     <div class="pilih-hari">
-                        <div class="day-circle active"><span>31</span><small>Okt</small></div>
-                        <div class="day-circle"><span>1</span><small>Nov</small></div>
-                        <div class="day-circle"><span>2</span><small>Nov</small></div>
-                        <div class="day-circle"><span>3</span><small>Nov</small></div>
-                        <div class="day-circle"><span>4</span><small>Nov</small></div>
-                        <div class="day-circle"><span>5</span><small>Nov</small></div>
-                        <div class="day-circle"><span>6</span><small>Nov</small></div>
-                        <div class="day-circle"><span>7</span><small>Nov</small></div>
-                        <div class="day-circle"><span>8</span><small>Nov</small></div>
-                        <div class="day-circle"><span>9</span><small>Nov</small></div>
-                        <div class="day-circle"><span>10</span><small>Nov</small></div>
-                        <div class="day-circle"><span>11</span><small>Nov</small></div>
-                    </div>
+
+    <div class="day-card">
+        <small>JUMAT</small>
+        <span>31</span>
+        <p>OKTOBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>SABTU</small>
+        <span>1</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>MINGGU</small>
+        <span>2</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>SENIN</small>
+        <span>3</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>SELASA</small>
+        <span>4</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>RABU</small>
+        <span>5</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>KAMIS</small>
+        <span>6</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+    <div class="day-card">
+        <small>JUMAT</small>
+        <span>7</span>
+        <p>NOVEMBER</p>
+        <b>2026</b>
+    </div>
+
+</div>
     <a href="{{ route('jadwal.pdf') }}"class="btn btn-blue btn-unduh"><i class="fas fa-download"></i> Unduh Jadwal</a>
             </div>
         </div>
