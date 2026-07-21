@@ -705,14 +705,14 @@ ul {
 .pilih-hari {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 20px;
 }
 
-.day-circle {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.day-card {
+    width: 75px;
+    height: 95px;
+    border-radius: 12px;
     background: var(--bg-light);
     border: 1px solid var(--border-color);
     display: flex;
@@ -720,32 +720,52 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: .3s;
 }
 
-.day-circle span {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1;
-}
-
-.day-circle small {
-    font-size: 0.6rem;
+.day-card small {
+    font-size: 10px;
+    font-weight: 600;
     color: var(--text-muted);
+    text-transform: uppercase;
 }
 
-.day-circle.active,
-.day-circle:hover {
+.day-card span {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1;
+    margin: 2px 0;
+}
+
+.day-card p {
+    font-size: 10px;
+    margin: 0;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.day-card b {
+    font-size: 10px;
+    color: #888;
+}
+
+.day-card.active,
+.day-card:hover {
     background: var(--primary-blue);
-    color: white;
     border-color: var(--primary-blue);
 }
 
-.day-circle.active small,
-.day-circle:hover small {
-    color: rgba(255, 255, 255, 0.8);
+.day-card.active small,
+.day-card.active span,
+.day-card.active p,
+.day-card.active b,
+.day-card:hover small,
+.day-card:hover span,
+.day-card:hover p,
+.day-card:hover b {
+    color: #fff;
 }
-
 .btn-unduh {
     padding: 12px 25px;
     font-size: 1rem;
@@ -1253,6 +1273,182 @@ footer {
 
 .footer-logo {
     height: 40px;
+}
+/* --- Konfigurasi Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@400;500;600&display=swap');
+
+.sidebar-faskes {
+    width: 100%;
+    max-width: 450px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3efe6; /* Warna latar krem */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- Filter Button --- */
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    background-color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-filter.active {
+    background-color: #1a251e; /* Warna gelap */
+    color: #ffffff;
+}
+
+/* --- List Container --- */
+.list-container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-header h2 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif; /* Font tegas untuk judul */
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.badge-lokasi {
+    background-color: #ece5d6;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* --- Scroll Area & Custom Scrollbar --- */
+.scroll-area {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.scroll-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+    background-color: #a0a0a0;
+    border-radius: 10px;
+}
+
+/* --- Card Faskes --- */
+.card-faskes {
+    background-color: #eee7d7; /* Warna krem card */
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+
+.card-icon {
+    background-color: #e54d42; /* Merah */
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0; /* Mencegah icon mengecil */
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.card-title-row h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+}
+
+.badge-rs {
+    background-color: #e7d3cb;
+    color: #d14d45;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.address, .venue {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.venue {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.venue strong {
+    color: #333;
+}
+
+.meta-info {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.distance {
+    color: #d14d45; /* Teks jarak warna merah */
+}
+
+.phone {
+    color: #666;
+}
+
+.meta-info i {
+    margin-right: 4px;
+    font-size: 12px;
 }
 
 
